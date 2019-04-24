@@ -1,19 +1,19 @@
-import pyautogui as gui
+import sys_proc.check_if_proc_is_running as check_if_proc_is_running
+import time
 
 
-#gui.press("enter")
+if __name__ == '__main__':
 
-# size = gui.size()
-# print(size)
-# x_middle = size[0]//2
-# y_middle = size[1]//2
+    #define inital conditions
+    proc_name = 'excel'
+    proc_found = 'false'
 
-#print(f"X = {x_middle} Y = {y_middle}")
-#gui.rightClick(x_middle, y_middle)
+    #wait unitl proc_name was started
+    while proc_found != True:
+        time.sleep(1) #wait for 1 second until checking for process
+        proc_found = check_if_proc_is_running.check_if_proc_is_running(proc_name)
+    print(f'{proc_name} was started')
 
+else:
+    print(f'{__name__} is not run as main')
 
-# locate_pos = gui.locateOnScreen('Screenshots/finder_logo.png')
-# if locate_pos is None:
-#     print("Not found")
-# else:
-#     print(locate_pos)

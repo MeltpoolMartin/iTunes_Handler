@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b285e7de-3797-47dd-bcd3-3b8f60743eef" name="Default Changelist" comment="" />
+    <list default="true" id="b285e7de-3797-47dd-bcd3-3b8f60743eef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Program_flow" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sys_proc/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sys_proc/check_if_proc_is_running.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sys_proc/get_proc_attrs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/iTunes_error.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/iTunes_error.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/OK_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/finder_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/iTunes_error_message.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/iTunes_error_message_frmless.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/timemachine_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/confirm_error_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/confirm_error_message.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,7 +26,49 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/Git/iTunes_error/confirm_error_message.py">
+        <entry file="file://$PROJECT_DIR$/confirm_error_message.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="e#0#68#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sys_proc/check_if_proc_is_running.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sys_proc/get_proc_attrs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Program_flow">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="1" selection-start-line="1" selection-end-line="1" />
@@ -33,6 +90,7 @@
       <find>locate</find>
       <find>locateallon</find>
       <find>locat</find>
+      <find>itunes</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -41,9 +99,19 @@
       <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Program_flow" />
+        <option value="$PROJECT_DIR$/check_if_process_is_running/check_if_process_is_running.py" />
+        <option value="$PROJECT_DIR$/sys_proc/check_if_process_is_running.py" />
+        <option value="$PROJECT_DIR$/sys_proc/get_pid.py" />
+        <option value="$PROJECT_DIR$/sys_proc/get_proc_attrs.py" />
+        <option value="$PROJECT_DIR$/sys_proc/check_if_proc_is_running.py" />
+        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/confirm_error_message.py" />
       </list>
     </option>
@@ -54,6 +122,7 @@
     <option name="width" value="1440" />
     <option name="height" value="811" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -84,11 +153,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$USER_HOME$/Git" />
+      <recent name="$PROJECT_DIR$/.." />
       <recent name="$PROJECT_DIR$/Screenshots" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/venv" />
@@ -106,7 +177,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.confirm_error_message">
+    <configuration name="check_if_process_is_running" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="iTunes_error" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/check_if_process_is_running" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/check_if_process_is_running/sys_proc.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="confirm_error_message" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="iTunes_error" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -128,9 +220,54 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="get_pid" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="iTunes_error" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sys_proc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sys_proc/get_proc_attrs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="iTunes_error" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.confirm_error_message" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.get_pid" />
+        <item itemvalue="Python.check_if_process_is_running" />
       </list>
     </recent_temporary>
   </component>
@@ -147,21 +284,31 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="811" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49173555" visible="true" weight="0.24242425" />
-      <window_info id="Structure" order="1" sideWeight="0.5082645" side_tool="true" visible="true" weight="0.24242425" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48956886" visible="true" weight="0.24242425" />
+      <window_info id="Structure" order="1" sideWeight="0.5104312" side_tool="true" visible="true" weight="0.24242425" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.9083503" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32684284" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991655" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32684284" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32962447" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32962447" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32684284" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32823366" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -170,7 +317,7 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Git/iTunes_error/venv/lib/python3.7/site-packages/pyautogui/_pyautogui_win.py">
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pyautogui/_pyautogui_win.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="129" column="12" selection-start-line="129" selection-start-column="12" selection-end-line="129" selection-end-column="12" />
@@ -182,17 +329,10 @@
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pyscreeze/__init__.py" />
     <entry file="file://$PROJECT_DIR$/face.png" />
     <entry file="file://$PROJECT_DIR$/parallels.png" />
-    <entry file="file://$PROJECT_DIR$/../hello_world/dictionary.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../hello_world/dice.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../hello_world/dictionary.py" />
+    <entry file="file://$PROJECT_DIR$/../hello_world/dice.py" />
     <entry file="file://$PROJECT_DIR$/para.png" />
-    <entry file="file://$USER_HOME$/Git/iTunes_error/confirm_error_message.spec">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Git/iTunes_error/venv/lib/python3.7/site-packages/pyautogui/_pyautogui_osx.py">
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pyautogui/_pyautogui_osx.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4080">
           <caret line="272" column="48" selection-start-line="272" selection-start-column="43" selection-end-line="272" selection-end-column="48" />
@@ -202,32 +342,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Git/iTunes_error/venv/lib/python3.7/site-packages/pyautogui/__main__.py">
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pyautogui/__main__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/Git/iTunes_error/venv/lib/python3.7/site-packages/pyautogui/screenshotUtil.py">
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pyautogui/screenshotUtil.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="111" column="15" selection-start-line="111" selection-start-column="4" selection-end-line="111" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Git/iTunes_error/Screenshots/iTunes_error_message_frmless.png">
+    <entry file="file://$PROJECT_DIR$/Screenshots/iTunes_error_message_frmless.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Git/iTunes_error/Screenshots/timemachine_logo.png">
+    <entry file="file://$PROJECT_DIR$/Screenshots/timemachine_logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Git/iTunes_error/Screenshots/iTunes_error_message.png">
+    <entry file="file://$PROJECT_DIR$/Screenshots/iTunes_error_message.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Git/iTunes_error/Screenshots/OK_button.png">
+    <entry file="file://$PROJECT_DIR$/Screenshots/OK_button.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Git/iTunes_error/confirm_error_message.py">
+    <entry file="file://$PROJECT_DIR$/confirm_error_message.spec">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/hello_world/venv/lib/python3.7/site-packages/pyautogui/_pyautogui_osx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Program_flow">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sys_proc/get_proc_attrs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sys_proc/check_if_proc_is_running.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/confirm_error_message.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
