@@ -13,7 +13,7 @@ if __name__ == '__main__':
     logger.setLevel(logging.INFO)
 
     # create a file handler
-    handler = logging.FileHandler(f'{__name__}.log')
+    handler = logging.FileHandler('logs/iTunes_error.log')
     handler.setLevel(logging.INFO)
 
     # create a logging format
