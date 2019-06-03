@@ -1,1 +1,2 @@
-Hello
+- Größe des Logs bestimmen bevor er überschrieben wird
+-Unterscheidung der popen Funktion wenn Beenden von 'iTunes' erfolgreich/nicht erfolgreich war --> loggen
