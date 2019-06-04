@@ -45,6 +45,8 @@ if __name__ == '__main__':
             proc_found = 'false'
             counter = 0
             logger.info("%s - Initialization finished", State)
+            logger.info(f"{State} - App Name = {app_name}")
+            logger.info(f"{State} - Termination Time = {hh}:{mm}:{ss}")
             State = State.LAUNCH_PROCESS
 
         if State == State.LAUNCH_PROCESS:
@@ -85,8 +87,9 @@ if __name__ == '__main__':
         if State == State.CHECK_TIME:
 
             while True:
-                time.sleep(1)  # wait for 1 sec to slow down loop
                 hour, minute, second = time.localtime()[3:6] # get current hour, min and sec
+                print('\r', f'{hour}:{minute}:{second}', end="")
+                time.sleep(1)  # wait for 1 sec to slow down loop
                 if hour >= hh and minute >= mm and second >= ss:
                     logger.info(f'{State} - Shutdown time reached')
                     State = State.KILL_PROCESS
@@ -99,7 +102,7 @@ if __name__ == '__main__':
                 logger.info(f"{State} - {proc_name} was terminated")
             except ValueError as err:
                 logger.info(f"{State} - {proc_name} could not be terminated")
-            time.sleep(10)
+            time.sleep(10) # wait until shutting down OS
             State = State.SHUTDOWN
 
         if State == State.SHUTDOWN:

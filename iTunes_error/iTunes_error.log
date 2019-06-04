@@ -1,0 +1,39 @@
+State.INIT - Initialization finished
+State.INIT - Initialization finished
+2019-06-02 22:24:04,896 - __main__ - INFO - State.INIT - Initialization finished
+State.LAUNCH_PROCESS - calc.exe was started
+2019-06-02 22:24:04,943 - __main__ - INFO - State.LAUNCH_PROCESS - calc.exe was started
+State.FIND_PROCESS - calc.exe was started
+2019-06-02 22:24:05,005 - __main__ - INFO - State.FIND_PROCESS - calc.exe was started
+State.FIND_PROCESS - {'username': 'VM_Windows_8_1\\Martin', 'pid': 740, 'name': 'calc.exe'}
+2019-06-02 22:24:05,005 - __main__ - INFO - State.FIND_PROCESS - {'username': 'VM_Windows_8_1\\Martin', 'pid': 740, 'name': 'calc.exe'}
+State.FIND_PROCESS - Enter key was pressed
+2019-06-02 22:24:10,125 - __main__ - INFO - State.FIND_PROCESS - Enter key was pressed
+State.CHECK_TIME - Shutdown time reached
+2019-06-02 22:24:12,141 - __main__ - INFO - State.CHECK_TIME - Shutdown time reached
+State.KILL_PROCESS - calc.exe was terminated
+2019-06-02 22:24:12,141 - __main__ - INFO - State.KILL_PROCESS - calc.exe was terminated
+State.SHUTDOWN - Operating system will be shut down
+2019-06-02 22:24:12,141 - __main__ - INFO - State.SHUTDOWN - Operating system will be shut down
+State.INIT - Initialization finished
+2019-06-02 22:25:17,929 - __main__ - INFO - State.INIT - Initialization finished
+State.INIT - Initialization finished
+2019-06-02 22:27:28,602 - __main__ - INFO - State.INIT - Initialization finished
+State.INIT - Initialization finished
+2019-06-02 22:32:35,548 - __main__ - INFO - State.INIT - Initialization finished
+State.INIT - Initialization finished
+2019-06-02 22:37:14,113 - __main__ - INFO - State.INIT - Initialization finished
+State.LAUNCH_PROCESS - iTunes was started
+2019-06-02 22:37:14,144 - __main__ - INFO - State.LAUNCH_PROCESS - iTunes was started
+State.FIND_PROCESS - iTunes was started
+2019-06-02 22:37:14,285 - __main__ - INFO - State.FIND_PROCESS - iTunes was started
+State.FIND_PROCESS - {'name': 'iTunesHelper.exe', 'username': 'VM_Windows_8_1\\Martin', 'pid': 3488}
+2019-06-02 22:37:14,285 - __main__ - INFO - State.FIND_PROCESS - {'name': 'iTunesHelper.exe', 'username': 'VM_Windows_8_1\\Martin', 'pid': 3488}
+State.FIND_PROCESS - Enter key was pressed
+2019-06-02 22:37:19,397 - __main__ - INFO - State.FIND_PROCESS - Enter key was pressed
+State.CHECK_TIME - Shutdown time reached
+2019-06-02 22:45:00,221 - __main__ - INFO - State.CHECK_TIME - Shutdown time reached
+State.KILL_PROCESS - iTunes was terminated
+2019-06-02 22:45:00,221 - __main__ - INFO - State.KILL_PROCESS - iTunes was terminated
+State.SHUTDOWN - Operating system will be shut down
+2019-06-02 22:45:00,221 - __main__ - INFO - State.SHUTDOWN - Operating system will be shut down
