@@ -66,6 +66,7 @@ if __name__ == '__main__':
         if State == State.FIND_PROCESS:
 
             #wait unitl proc_name was started or timeout
+            time.sleep(10)
             proc_info = get_proc_attrs.get_proc_attrs(proc_name)
             proc_found = check_if_proc_is_running.check_if_proc_is_running(proc_name)
 
@@ -88,7 +89,7 @@ if __name__ == '__main__':
 
             while True:
                 hour, minute, second = time.localtime()[3:6] # get current hour, min and sec
-                print('\r', f'{hour}:{minute}:{second}', end="")
+                print('\r', f'Current Time: {hour}:{minute}:{second}', end="")
                 time.sleep(1)  # wait for 1 sec to slow down loop
                 if hour >= hh and minute >= mm and second >= ss:
                     logger.info(f'{State} - Shutdown time reached')
