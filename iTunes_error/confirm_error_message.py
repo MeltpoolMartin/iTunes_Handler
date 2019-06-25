@@ -15,9 +15,10 @@ class State(Enum):
     LAUNCH_PROCESS = 2
     FIND_PROCESS = 3
     CHECK_TIME = 4
-    KILL_PROCESS = 5
-    SHUTDOWN = 6
-    STOP = 7
+    UPDATE_LIBRARY = 5
+    KILL_PROCESS = 6
+    SHUTDOWN = 7
+    STOP = 8
 
 if __name__ == '__main__':
 
@@ -76,7 +77,7 @@ if __name__ == '__main__':
                 time.sleep(5)
                 gui.press('enter') # enter key confirms the error message
                 logger.info("%s - Enter key was pressed", State)
-                State = State.CHECK_TIME
+                State = State.UPDATE_LIBRARY
 
             time.sleep(1)  # wait for 1 second until checking for process
             counter += 1
@@ -95,6 +96,19 @@ if __name__ == '__main__':
                     logger.info(f'{State} - Shutdown time reached')
                     State = State.KILL_PROCESS
                     break
+
+        if State == State.UPDATE_LIBRARY:
+            logger.info(f"{State} - Updating iTunes library")
+            time.sleep(30)
+            gui.press('alt') #open menu
+            time.sleep(1)
+            for i in range(1, 6):
+                gui.press('down')
+                time.sleep(1)
+            gui.press('enter')
+            time.sleep(1)
+            gui.press('enter')
+            State = State.CHECK_TIME
 
         if State == State.KILL_PROCESS:
 
