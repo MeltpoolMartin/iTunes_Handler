@@ -167,10 +167,17 @@ if __name__ == '__main__':
                     break
 
         if State == State.CHECK_4_UPDATE:
-            if check_4_lib_update(json_path, lib_path) is True:
-                State = State.UPDATE_LIBRARY
-            else:
-                State = State.CHECK_TIME
+            if os.path.isfile(json_path): #check if json file is already there, if not create on and update lib
+                file_name = os.path.split(json_path)[-1]
+                if (os.path.splitext(file_name)[0] == 'iTunes_error_cfg') and (
+                        os.path.splitext(file_name)[1] == '.json'):
+                    if check_4_lib_update(json_path, lib_path) is True:
+                        State = State.UPDATE_LIBRARY
+                    else:
+                        State = State.CHECK_TIME
+                else:
+                    write_cfg((count_files(lib_path)))
+                    State = State.UPDATE_LIBRARY
 
         if State == State.UPDATE_LIBRARY:
             logger.info(f"{State} - Updating iTunes library")

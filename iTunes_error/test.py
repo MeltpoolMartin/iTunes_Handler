@@ -68,7 +68,11 @@ def check_4_lib_update(json_path, lib_path):
 
 
 data = {'.plist': 1, '.jpg': 1072, '.ini': 176, '.mp3': 5991, '.db': 58, '.nfo': 7, '.m4a': 4, '.rar': 2, '.r00': 1, '.tmp': 1, '.txt': 4, '.png': 1, '.pdf': 2, '.p4u': 1, '.cld': 2, '.m3u': 37, '.sfv': 6, '.url': 4, '.jpeg': 1, '.zip': 1, '.strings': 39}
-
+path= 'iTunes_error_cfg/iTunes_error_cfg.json'
 #write_cfg(data)
 #data = read_cfg('/Users/Martin/GitKraken/iTunes_error/iTunes_error/')
-print(check_4_lib_update(json_path='iTunes_error_cfg/iTunes_error_cfg.json', lib_path='/Volumes/music'))
+#print(check_4_lib_update(json_path='iTunes_error_cfg/iTunes_error_cfg.json', lib_path='/Volumes/music'))
+if os.path.isfile(path):
+    file_name = os.path.split(path)[-1]
+    if (os.path.splitext(file_name)[0] == 'iTunes_error_cfg') and (os.path.splitext(file_name)[1] == '.json'):
+        print('the right file')
