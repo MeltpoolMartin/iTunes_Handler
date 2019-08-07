@@ -3,10 +3,10 @@ import os
 import time
 
 
-def write_cfg(lib_data={}, playlist_data={}):
+def write_cfg(data):
     with open('iTunes_error_cfg/iTunes_error_cfg.json', 'w') as cfg:
-        json.dump(lib_data, cfg)
-        json.dump(playlist_data, cfg) #JSON conflict
+        json.dump(data, cfg)
+
 
 
 def read_cfg(path):
@@ -40,8 +40,8 @@ def count_files(path):
                     lib_data.setdefault(extension.lower(), 0)
                     lib_data[extension.lower()] += 1
                     if extension == ".m3u":
-                        playlist_data.setdefault(file_name, '')
-                        playlist_data[file_name] = get_last_mod(path=os.path.join(path, folder_name,  file_name), type='string')
+                        playlist_data.setdefault(file_name, 0.0)
+                        playlist_data[file_name] = get_last_mod(path=os.path.join(path, folder_name,  file_name), type='float')
         return (lib_data, playlist_data)
     else:
         print('Given path should only be a directory')
@@ -55,8 +55,9 @@ def check_4_lib_update(json_path, lib_path):
     @return: False --> no update required; True --> update required
     """
     if (os.path.splitext(json_path)[-1] == '.json') and (os.path.isdir(lib_path) is True):
-        new_lib_data = count_files(lib_path)
-        old_lib_data = read_cfg(json_path)
+        new_lib_data, new_playlist_data = count_files(lib_path)
+        old_lib_data, old_playlist_data = read_cfg(json_path)
+        #Checking for changed amount of files
         for key in new_lib_data.keys():
             if key in old_lib_data.keys():
                 if new_lib_data[key] != old_lib_data[key]:
@@ -65,22 +66,29 @@ def check_4_lib_update(json_path, lib_path):
             else:
                 print(f'missing in old keys: {key}')
                 return True
+        #Checking for modified playlists
+        for key in new_playlist_data.keys():
+            #print(key, new_playlist_data[key])
+            if key in old_playlist_data.keys():
+                if new_playlist_data[key] > old_playlist_data[key]:
+                    print(f'{key} new:{new_playlist_data[key]} old: {old_playlist_data[key]}')
+                    return True
         return False
     else:
         return None
 
 
-def get_last_mod(path, type='integer'):
+def get_last_mod(path, type='float'):
     '''
-    Function to get the last modification data of the given file path as string in the format %Y-%m-%d %H:%M:%S or as integer in seconds
+    Function to get the last modification data of the given file path as string in the format %Y-%m-%d %H:%M:%S or as float in seconds
     @param path: filepath
-    @param type: integer = seconds as integer value; string = timestamp as string
+    @param type: float = seconds as float value; string = timestamp as string
     @return:
     '''
     if os.path.isfile(path) is True:
         # Get file's Last modification time stamp only in terms of seconds since epoch
         last_mod_in_sec = os.path.getmtime(path)
-        if type == 'integer':
+        if type == 'float':
             return last_mod_in_sec
         else:
             # Convert seconds since epoch to readable timestamp
@@ -88,13 +96,21 @@ def get_last_mod(path, type='integer'):
 
 
 
-data = {'.plist': 1, '.jpg': 1072, '.ini': 176, '.mp3': 5991, '.db': 58, '.nfo': 7, '.m4a': 4, '.rar': 2, '.r00': 1, '.tmp': 1, '.txt': 4, '.png': 1, '.pdf': 2, '.p4u': 1, '.cld': 2, '.m3u': 37, '.sfv': 6, '.url': 4, '.jpeg': 1, '.zip': 1, '.strings': 39}
-path= 'iTunes_error_cfg/iTunes_error_cfg.json'
-lib_data, playlist_data = count_files('/Volumes/music')
-write_cfg(lib_data, playlist_data)
-#data = read_cfg('/Users/Martin/GitKraken/iTunes_error/iTunes_error/')
+
+#path= 'iTunes_error_cfg/iTunes_error_cfg.json'
+#data = count_files('/Volumes/music')
+#write_cfg(data)
+#lib = read_cfg('iTunes_error_cfg/iTunes_error_cfg.json')
 #print(check_4_lib_update(json_path='iTunes_error_cfg/iTunes_error_cfg.json', lib_path='/Volumes/music'))
-# if os.path.isfile(path):
-#     file_name = os.path.split(path)[-1]
-#     if (os.path.splitext(file_name)[0] == 'iTunes_error_cfg') and (os.path.splitext(file_name)[1] == '.json'):
-#         print('the right file')
+
+json_path='iTunes_error_cfg/iTunes_error_cfg.json'
+lib_path='/Volumes/music'
+
+if (os.path.isfile(json_path)) and (os.path.split(json_path)[-1] == 'iTunes_error_cfg.json'):  # check if json file is already there, if not create on and update lib
+    if check_4_lib_update(json_path, lib_path) is True:
+        print('Update Lib')
+    else:
+        print('Check Time')
+else:
+    write_cfg((count_files(lib_path)))
+    print('Update Lib2')
