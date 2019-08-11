@@ -4,7 +4,6 @@
     <list default="true" id="b285e7de-3797-47dd-bcd3-3b8f60743eef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/confirm_error_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/confirm_error_message.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,16 +16,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/confirm_error_message.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-374">
-              <caret line="227" column="24" selection-start-line="227" selection-start-column="20" selection-end-line="227" selection-end-column="24" />
+            <state relative-caret-position="481">
+              <caret line="153" column="40" selection-start-line="150" selection-start-column="14" selection-end-line="153" selection-end-column="40" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
-                <element signature="e#301#451#0" />
-                <element signature="e#473#851#0" />
-                <element signature="e#881#2003#0" />
-                <element signature="e#2055#3555#0" />
-                <element signature="e#3600#4264#0" />
-                <element signature="e#4305#4525#0" />
               </folding>
             </state>
           </provider>
@@ -36,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -58,6 +51,7 @@
       <find>itunes</find>
       <find>ZZ T</find>
       <find>Mode</find>
+      <find>write_cfg</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -301,7 +295,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="808" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4626556" visible="true" weight="0.24242425" />
       <window_info id="Structure" order="1" sideWeight="0.5373444" side_tool="true" weight="0.24242425" />
@@ -449,26 +442,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/iTunes_error_cfg/get_windows_titles/get_window_titles.py" />
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/confirm_error_message.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="481">
+          <caret line="153" column="40" selection-start-line="150" selection-start-column="14" selection-end-line="153" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/confirm_error_message.py">
+    <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="227" column="24" selection-start-line="227" selection-start-column="20" selection-end-line="227" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-            <element signature="e#301#451#0" />
-            <element signature="e#473#851#0" />
-            <element signature="e#881#2003#0" />
-            <element signature="e#2055#3555#0" />
-            <element signature="e#3600#4264#0" />
-            <element signature="e#4305#4525#0" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>

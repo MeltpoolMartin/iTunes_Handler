@@ -148,10 +148,10 @@ if __name__ == '__main__':
             logger = logging.getLogger(__name__)
             logging.basicConfig(level=logging.INFO,
                                format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-            #logging.basicConfig(level=logging.INFO, filename='iTunes_error.log',
+            # logging.basicConfig(level=logging.INFO, filename='iTunes_error.log',
             #                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-            #handler = logging.handlers.RotatingFileHandler('iTunes_error.log', maxBytes=10000)  # adding handler for rotating log files
-            #logger.addHandler(handler)
+            # handler = logging.handlers.RotatingFileHandler('iTunes_error.log', maxBytes=10000)  # adding handler for rotating log files
+            # logger.addHandler(handler)
 
             #Initialize LAUNCH PROCESS
             #app_name = 'calc.exe'
@@ -226,14 +226,15 @@ if __name__ == '__main__':
                 if check_4_lib_update(json_path, lib_path) is True:
                     logger.info(f'{State} - iTunes library update required')
                     Mode = Mode.updating
-                    logger.info(f'{State} - Changed Mode to {Mode}')
                     State = State.UPDATE_LIBRARY
                 else:
                     Mode = Mode.default
                     State = State.CHECK_TIME
             else:
                 write_cfg((count_files(lib_path)))
+                Mode = Mode.updating
                 State = State.UPDATE_LIBRARY
+            logger.info(f'{State} - Changed Mode to {Mode}')
 
         if State == State.UPDATE_LIBRARY:
 
@@ -279,6 +280,7 @@ if __name__ == '__main__':
             except ValueError as err:
                 logger.info(f"{State} - {proc_name} could not be terminated")
             time.sleep(10) # wait until shutting down OS
+            logger.debug(f"{State} - current mode: {Mode}")
             if Mode == Mode.default:
                 State = State.SHUTDOWN
             if Mode == Mode.updating:
