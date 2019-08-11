@@ -5,12 +5,15 @@ import json
 import logging.handlers
 import subprocess
 import os
+import ctypes
 import time
 import pyautogui as gui
 from enum import Enum
 
 
 def write_cfg(data):
+    if not os.path.exists(os.path.split(json_path)[0]):
+        os.makedirs(os.path.split(json_path)[0])
     with open('iTunes_error_cfg/iTunes_error_cfg.json', 'w') as cfg:
         json.dump(data, cfg)
         logger.info(f"{State} - {cfg_name} was created")
@@ -106,6 +109,15 @@ def get_last_mod(path, type='float'):
             return time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(last_mod_in_sec))
 
 
+def foreach_window(hwnd, lParam):
+    if IsWindowVisible(hwnd):
+        length = GetWindowTextLength(hwnd)
+        buff = ctypes.create_unicode_buffer(length + 1)
+        GetWindowText(hwnd, buff, length + 1)
+        titles.append(buff.value)
+    return True
+
+
 class State(Enum):
 
     INIT = 1
@@ -113,10 +125,16 @@ class State(Enum):
     FIND_PROCESS = 3
     CHECK_TIME = 4
     CHECK_4_UPDATE = 5
-    UPDATE_LIBRARY = 6
-    KILL_PROCESS = 7
-    SHUTDOWN = 8
-    STOP = 9
+    CHECK_UPDATE_PROGRESS = 6
+    UPDATE_LIBRARY = 7
+    KILL_PROCESS = 8
+    SHUTDOWN = 9
+    STOP = 10
+
+class Mode(Enum):
+
+    default = 1 #default mode if no update is required
+    updating = 2 #updateing mode
 
 
 if __name__ == '__main__':
@@ -130,16 +148,16 @@ if __name__ == '__main__':
             logger = logging.getLogger(__name__)
             logging.basicConfig(level=logging.INFO,
                                format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-            #logging.basicConfig(level=logging.INFO, filename='iTunes_error.log',
+            # logging.basicConfig(level=logging.INFO, filename='iTunes_error.log',
             #                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-            #handler = logging.handlers.RotatingFileHandler('iTunes_error.log', maxBytes=10000)  # adding handler for rotating log files
-            #logger.addHandler(handler)
+            # handler = logging.handlers.RotatingFileHandler('iTunes_error.log', maxBytes=10000)  # adding handler for rotating log files
+            # logger.addHandler(handler)
 
             #Initialize LAUNCH PROCESS
             #app_name = 'calc.exe'
             app_name = 'iTunes'
             app_path = 'C:\Program Files\iTunes\iTunes.exe'
-            lib_path = '/Volumes/music'
+            lib_path = r'M:/'
             cfg_name = 'iTunes_error_cfg.json'
             json_path = os.path.join('iTunes_error_cfg', cfg_name)
 
@@ -153,6 +171,7 @@ if __name__ == '__main__':
             logger.info(f"{State} - App Name = {app_name}")
             logger.info(f"{State} - Termination Time = {hh}:{mm}:{ss}")
             State = State.LAUNCH_PROCESS
+            Mode = Mode.default
 
         if State == State.LAUNCH_PROCESS:
 
@@ -202,16 +221,23 @@ if __name__ == '__main__':
                     break
 
         if State == State.CHECK_4_UPDATE:
+
             if (os.path.isfile(json_path)) and (os.path.split(json_path)[-1] == cfg_name): #check if json file is already there, if not create on and update lib
                 if check_4_lib_update(json_path, lib_path) is True:
+                    logger.info(f'{State} - iTunes library update required')
+                    Mode = Mode.updating
                     State = State.UPDATE_LIBRARY
                 else:
+                    Mode = Mode.default
                     State = State.CHECK_TIME
             else:
                 write_cfg((count_files(lib_path)))
+                Mode = Mode.updating
                 State = State.UPDATE_LIBRARY
+            logger.info(f'{State} - Changed Mode to {Mode}')
 
         if State == State.UPDATE_LIBRARY:
+
             logger.info(f"{State} - Updating iTunes library")
             time.sleep(30)
             gui.press('alt') #open menu
@@ -222,7 +248,29 @@ if __name__ == '__main__':
             gui.press('enter')
             time.sleep(1)
             gui.press('enter')
-            State = State.CHECK_TIME #Restart iTunes after lib update to enable private share
+            State = State.CHECK_UPDATE_PROGRESS #Restart iTunes after lib update to enable private share
+
+        if State == State.CHECK_UPDATE_PROGRESS:
+            update_finished = True
+            time.sleep(10)
+            titles = []
+            EnumWindows = ctypes.windll.user32.EnumWindows
+            EnumWindowsProc = ctypes.WINFUNCTYPE(ctypes.c_bool, ctypes.POINTER(ctypes.c_int),
+                                                 ctypes.POINTER(ctypes.c_int))
+            GetWindowText = ctypes.windll.user32.GetWindowTextW
+            GetWindowTextLength = ctypes.windll.user32.GetWindowTextLengthW
+            IsWindowVisible = ctypes.windll.user32.IsWindowVisible
+
+            EnumWindows(EnumWindowsProc(foreach_window), 0)
+
+            for title in titles:
+                if title == 'Dateien hinzufügen': #key string: Dateien hinzufügen
+                    update_finished = False
+                    State = State.CHECK_UPDATE_PROGRESS
+            if update_finished is True:
+                logger.info(f"{State} - Updating iTunes library finished")
+                write_cfg((count_files(lib_path)))
+                State = State.KILL_PROCESS
 
         if State == State.KILL_PROCESS:
 
@@ -232,7 +280,11 @@ if __name__ == '__main__':
             except ValueError as err:
                 logger.info(f"{State} - {proc_name} could not be terminated")
             time.sleep(10) # wait until shutting down OS
-            State = State.SHUTDOWN
+            logger.debug(f"{State} - current mode: {Mode}")
+            if Mode == Mode.default:
+                State = State.SHUTDOWN
+            if Mode == Mode.updating:
+                State = State.LAUNCH_PROCESS #initialize a restart of iTunes after an update
 
         if State == State.SHUTDOWN:
 
