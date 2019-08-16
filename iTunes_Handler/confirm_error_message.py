@@ -148,9 +148,9 @@ if __name__ == '__main__':
             logger = logging.getLogger(__name__)
             logging.basicConfig(level=logging.INFO,
                                format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-            # logging.basicConfig(level=logging.INFO, filename='iTunes_error.log',
+            # logging.basicConfig(level=logging.INFO, filename='iTunes_Handler.log',
             #                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-            # handler = logging.handlers.RotatingFileHandler('iTunes_error.log', maxBytes=10000)  # adding handler for rotating log files
+            # handler = logging.handlers.RotatingFileHandler('iTunes_Handler.log', maxBytes=10000)  # adding handler for rotating log files
             # logger.addHandler(handler)
 
             #Initialize LAUNCH PROCESS
