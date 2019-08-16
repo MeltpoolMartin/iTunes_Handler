@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b285e7de-3797-47dd-bcd3-3b8f60743eef" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/iTunes_error.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/iTunes_Handler.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/confirm_error_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/confirm_error_message.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,10 +15,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/confirm_error_message.py">
+        <entry file="file://$PROJECT_DIR$/../iTunes_Handler/confirm_error_message.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="106" column="29" selection-start-line="106" selection-start-column="29" selection-end-line="106" selection-end-column="29" />
+            <state relative-caret-position="1176">
+              <caret line="136" column="25" selection-start-line="136" selection-start-column="25" selection-end-line="136" selection-end-column="25" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -26,19 +27,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sys_proc/get_proc_attrs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="7" selection-start-line="3" selection-start-column="3" selection-end-line="6" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
+        <entry file="file://$PROJECT_DIR$/../iTunes_Handler/test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="42" />
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -58,6 +50,9 @@
       <find>locateallon</find>
       <find>locat</find>
       <find>itunes</find>
+      <find>ZZ T</find>
+      <find>Mode</find>
+      <find>write_cfg</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -80,8 +75,13 @@
         <option value="$PROJECT_DIR$/sys_proc/check_if_proc_is_running.py" />
         <option value="$PROJECT_DIR$/notes" />
         <option value="$PROJECT_DIR$/open_file.py" />
+        <option value="$PROJECT_DIR$/test1.py" />
+        <option value="$PROJECT_DIR$/iTunes_error_cfg/iTunes_error_cfg.json" />
+        <option value="$PROJECT_DIR$/last_mod.py" />
+        <option value="$PROJECT_DIR$/iTunes_error_cfg/get_windows_titles/get_window_titles.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/confirm_error_message.py" />
+        <option value="$PROJECT_DIR$/../iTunes_Handler/confirm_error_message.py" />
       </list>
     </option>
   </component>
@@ -101,17 +101,17 @@
         <subPane>
           <expand>
             <path>
-              <item name="iTunes_error" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iTunes_error" type="462c0819:PsiDirectoryNode" />
+              <item name="iTunes_Handler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iTunes_Handler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="iTunes_error" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iTunes_error" type="462c0819:PsiDirectoryNode" />
-              <item name="open_file" type="462c0819:PsiDirectoryNode" />
+              <item name="iTunes_Handler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iTunes_Handler" type="462c0819:PsiDirectoryNode" />
+              <item name="iTunes_error_cfg" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="iTunes_error" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iTunes_error" type="462c0819:PsiDirectoryNode" />
+              <item name="iTunes_Handler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iTunes_Handler" type="462c0819:PsiDirectoryNode" />
               <item name="sys_proc" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -134,7 +134,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -157,20 +157,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.confirm_error_message">
-    <configuration name="check_if_process_is_running" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="iTunes_error" />
+  <component name="RunManager" selected="Python.test">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="iTunes_Handler" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/check_if_process_is_running" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/check_if_process_is_running/sys_proc.py" />
+      <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -179,8 +179,50 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="confirm_error_message" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="iTunes_error" />
+    <configuration name="character_counter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="iTunes_Handler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/ProgrammingExcercise/Basics" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/ProgrammingExcercise/Basics/character_counter.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get_window_titles" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="iTunes_Handler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/iTunes_error_cfg/get_windows_titles" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/iTunes_error_cfg/get_windows_titles/get_window_titles.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="last_mod" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="iTunes_Handler" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -191,49 +233,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/confirm_error_message.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="get_pid" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="iTunes_error" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sys_proc" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sys_proc/get_proc_attrs.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="open_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="iTunes_error" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/open_file/open_file.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/last_mod.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -243,7 +243,7 @@
       <method v="2" />
     </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="iTunes_error" />
+      <module name="iTunes_Handler" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -263,13 +263,77 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="iTunes_Handler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="iTunes_Handler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="iTunes_Handler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="iTunes_Handler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.confirm_error_message" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.open_file" />
-        <item itemvalue="Python.get_pid" />
-        <item itemvalue="Python.check_if_process_is_running" />
+        <item itemvalue="Python.get_window_titles" />
+        <item itemvalue="Python.last_mod" />
+        <item itemvalue="Python.test1" />
+        <item itemvalue="Python.character_counter" />
       </list>
     </recent_temporary>
   </component>
@@ -296,15 +360,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="811" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="808" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4673157" visible="true" weight="0.24242425" />
-      <window_info id="Structure" order="1" sideWeight="0.53268427" side_tool="true" visible="true" weight="0.24242425" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4626556" visible="true" weight="0.24242425" />
+      <window_info id="Structure" order="1" sideWeight="0.5373444" side_tool="true" weight="0.24242425" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.90820587" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32684284" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.90782124" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32681563" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991655" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -317,9 +381,28 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4626556" visible="true" weight="0.24242425" />
+      <window_info id="Structure" order="1" sideWeight="0.5373444" side_tool="true" visible="true" weight="0.24242425" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.90782124" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32681563" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991655" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32962447" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32962447" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32684284" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32823366" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pyautogui/_pyautogui_win.py">
+    <entry file="file://$PROJECT_DIR$/../iTunes_Handler/venv/lib/python3.7/site-packages/pyautogui/_pyautogui_win.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="129" column="12" selection-start-line="129" selection-start-column="12" selection-end-line="129" selection-end-column="12" />
@@ -334,7 +417,7 @@
     <entry file="file://$PROJECT_DIR$/../hello_world/dictionary.py" />
     <entry file="file://$PROJECT_DIR$/../hello_world/dice.py" />
     <entry file="file://$PROJECT_DIR$/para.png" />
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pyautogui/_pyautogui_osx.py">
+    <entry file="file://$PROJECT_DIR$/../iTunes_Handler/venv/lib/python3.7/site-packages/pyautogui/_pyautogui_osx.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4080">
           <caret line="272" column="48" selection-start-line="272" selection-start-column="43" selection-end-line="272" selection-end-column="48" />
@@ -344,10 +427,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pyautogui/__main__.py">
+    <entry file="file://$PROJECT_DIR$/../iTunes_Handler/venv/lib/python3.7/site-packages/pyautogui/__main__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/pyautogui/screenshotUtil.py">
+    <entry file="file://$PROJECT_DIR$/../iTunes_Handler/venv/lib/python3.7/site-packages/pyautogui/screenshotUtil.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="111" column="15" selection-start-line="111" selection-start-column="4" selection-end-line="111" selection-end-column="15" />
@@ -358,7 +441,7 @@
     <entry file="file://$PROJECT_DIR$/Screenshots/timemachine_logo.png" />
     <entry file="file://$PROJECT_DIR$/Screenshots/iTunes_error_message.png" />
     <entry file="file://$PROJECT_DIR$/Screenshots/OK_button.png" />
-    <entry file="file://$PROJECT_DIR$/confirm_error_message.spec">
+    <entry file="file://$PROJECT_DIR$/../iTunes_Handler/confirm_error_message.spec">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$USER_HOME$/PycharmProjects/hello_world/venv/lib/python3.7/site-packages/pyautogui/_pyautogui_osx.py">
@@ -369,14 +452,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/notes.txt" />
-    <entry file="file://$PROJECT_DIR$/notes">
+    <entry file="file://$PROJECT_DIR$/../iTunes_Handler/notes">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="5" lean-forward="true" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sys_proc/__init__.py">
+    <entry file="file://$PROJECT_DIR$/../iTunes_Handler/sys_proc/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/logging/__init__.py">
@@ -388,42 +471,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/example.log" />
     <entry file="file://$PROJECT_DIR$/hello.log" />
-    <entry file="file://$PROJECT_DIR$/open_file/open_file.py">
+    <entry file="file://$PROJECT_DIR$/../iTunes_Handler/open_file/open_file.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sys_proc/check_if_proc_is_running.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logs/__main__.log" />
-    <entry file="file://$PROJECT_DIR$/confirm_error_message.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="106" column="29" selection-start-line="106" selection-start-column="29" selection-end-line="106" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sys_proc/get_proc_attrs.py">
+    <entry file="file://$PROJECT_DIR$/../iTunes_Handler/sys_proc/get_proc_attrs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="7" selection-start-line="3" selection-start-column="3" selection-end-line="6" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/test1.py" />
+    <entry file="file://$USER_HOME$/ProgrammingExcercise/Basics/character_counter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.ini" />
+    <entry file="file://$PROJECT_DIR$/config.json" />
+    <entry file="file://$PROJECT_DIR$/iTunes_error_cfg/config.json" />
+    <entry file="file://$PROJECT_DIR$/last_mod.py" />
+    <entry file="file://$PROJECT_DIR$/../iTunes_Handler/iTunes_error_cfg/iTunes_error_cfg.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../iTunes_Handler/sys_proc/check_if_proc_is_running.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iTunes_error_cfg/get_windows_titles/get_window_titles.py" />
+    <entry file="file://$PROJECT_DIR$/../iTunes_Handler/confirm_error_message.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1176">
+          <caret line="136" column="25" selection-start-line="136" selection-start-column="25" selection-end-line="136" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../iTunes_Handler/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="42" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
