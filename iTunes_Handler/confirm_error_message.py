@@ -252,7 +252,7 @@ if __name__ == '__main__':
 
         if State == State.CHECK_UPDATE_PROGRESS:
             update_finished = True
-            time.sleep(10)
+            time.sleep(30) #waiting time that the iTunes lib update can start
             titles = []
             EnumWindows = ctypes.windll.user32.EnumWindows
             EnumWindowsProc = ctypes.WINFUNCTYPE(ctypes.c_bool, ctypes.POINTER(ctypes.c_int),
