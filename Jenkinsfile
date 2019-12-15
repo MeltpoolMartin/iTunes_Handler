@@ -1,15 +1,14 @@
 pipeline {
   agent {
-    docker {
-      image 'node:6-alpine'
-      args '-p 3000:3000'
+    dockerfile {
+      filename 'Jenkins'
     }
 
   }
   stages {
-    stage('Build') {
+    stage('Example') {
       steps {
-        sh 'npm install'
+        sh 'echo "Hello World"'
       }
     }
   }
