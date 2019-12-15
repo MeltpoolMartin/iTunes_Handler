@@ -1,15 +1,12 @@
 pipeline {
-  agent {
-    dockerfile {
-      filename 'Jenkinsfile'
+    agent {
+        docker { image 'node:7-alpine' }
     }
-
-  }
-  stages {
-    stage('Example') {
-      steps {
-        sh 'echo \'Hello World!\''
-      }
+    stages {
+        stage('Test') {
+            steps {
+                sh 'node --version'
+            }
+        }
     }
-  }
 }
